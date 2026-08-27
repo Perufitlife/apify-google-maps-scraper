@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Green circular background -->
+  <circle cx="128" cy="128" r="128" fill="#34A853"/>
+  <!-- White map pin with building silhouette inside -->
+  <g transform="translate(128, 118)">
+    <!-- Pin outer shape -->
+    <path d="M0,-68 C-37.5,-68 -68,-37.5 -68,0 C-68,25 -10,85 0,100 C10,85 68,25 68,0 C68,-37.5 37.5,-68 0,-68 Z" fill="white"/>
+    <!-- Building silhouette inside pin -->
+    <g fill="#34A853">
+      <!-- Main building body -->
+      <rect x="-22" y="-30" width="44" height="40" rx="2"/>
+      <!-- Windows row 1 -->
+      <rect x="-16" y="-24" width="10" height="8" rx="1" fill="white"/>
+      <rect x="6" y="-24" width="10" height="8" rx="1" fill="white"/>
+      <!-- Windows row 2 -->
+      <rect x="-16" y="-12" width="10" height="8" rx="1" fill="white"/>
+      <rect x="6" y="-12" width="10" height="8" rx="1" fill="white"/>
+      <!-- Door -->
+      <rect x="-6" y="-2" width="12" height="12" rx="1" fill="white"/>
+    </g>
+  </g>
+</svg>

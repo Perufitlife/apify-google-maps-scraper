@@ -1,0 +1,17 @@
+{
+    "actorSpecification": 1,
+    "name": "google-maps-businesses",
+    "title": "Google Maps Business Scraper — Local Business Data, Emails & Phone Numbers",
+    "version": "0.1",
+    "buildTag": "latest",
+    "defaultMemoryMbytes": 2048,
+    "minMemoryMbytes": 512,
+    "maxMemoryMbytes": 32768,
+    "dockerfile": "../Dockerfile",
+    "readme": "../README.md",
+    "input": "./input_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "output": "./output_schema.json"
+}

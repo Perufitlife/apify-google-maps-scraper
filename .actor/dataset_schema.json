@@ -1,0 +1,249 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "searchQuery": {
+      "type": "string",
+      "title": "Original Search Query"
+    },
+    "businessName": {
+      "type": "string",
+      "title": "Business Name"
+    },
+    "category": {
+      "type": "string",
+      "title": "Business Category"
+    },
+    "address": {
+      "type": "string",
+      "title": "Full Address"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "website": {
+      "type": "string",
+      "title": "Website URL"
+    },
+    "rating": {
+      "type": "number",
+      "title": "Average Rating (1-5)"
+    },
+    "reviewCount": {
+      "type": "integer",
+      "title": "Number of Reviews"
+    },
+    "priceLevel": {
+      "type": "string",
+      "title": "Price Level ($-$$$$)"
+    },
+    "openingHours": {
+      "type": "object",
+      "title": "Opening Hours"
+    },
+    "latitude": {
+      "type": "number",
+      "title": "Latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "title": "Longitude"
+    },
+    "placeUrl": {
+      "type": "string",
+      "title": "Google Maps URL"
+    },
+    "imageUrl": {
+      "type": "string",
+      "title": "Main Photo URL"
+    },
+    "scrapedAt": {
+      "type": "string",
+      "title": "Scraped At (ISO)"
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "description": "One row per business: name, category, how to reach it, and how well it is rated.",
+      "transformation": {
+        "fields": [
+          "businessName",
+          "category",
+          "address",
+          "phone",
+          "website",
+          "rating",
+          "reviewCount",
+          "placeUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "businessName": {
+            "label": "Business",
+            "format": "text"
+          },
+          "category": {
+            "label": "Category",
+            "format": "text"
+          },
+          "address": {
+            "label": "Address",
+            "format": "text"
+          },
+          "phone": {
+            "label": "Phone",
+            "format": "text"
+          },
+          "website": {
+            "label": "Website",
+            "format": "link"
+          },
+          "rating": {
+            "label": "Rating",
+            "format": "number"
+          },
+          "reviewCount": {
+            "label": "Reviews",
+            "format": "number"
+          },
+          "placeUrl": {
+            "label": "Google Maps",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "leads": {
+      "title": "Call sheet",
+      "description": "Stripped to the contact columns, ready to paste into a dialer or CRM.",
+      "transformation": {
+        "fields": [
+          "businessName",
+          "category",
+          "phone",
+          "website",
+          "address",
+          "searchQuery"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "businessName": {
+            "label": "Business",
+            "format": "text"
+          },
+          "category": {
+            "label": "Category",
+            "format": "text"
+          },
+          "phone": {
+            "label": "Phone",
+            "format": "text"
+          },
+          "website": {
+            "label": "Website",
+            "format": "link"
+          },
+          "address": {
+            "label": "Address",
+            "format": "text"
+          },
+          "searchQuery": {
+            "label": "Found via",
+            "format": "text"
+          }
+        }
+      }
+    },
+    "ratings": {
+      "title": "Ratings",
+      "description": "Reputation columns for comparing competitors in one area.",
+      "transformation": {
+        "fields": [
+          "businessName",
+          "category",
+          "rating",
+          "reviewCount",
+          "priceLevel",
+          "address",
+          "placeUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "businessName": {
+            "label": "Business",
+            "format": "text"
+          },
+          "category": {
+            "label": "Category",
+            "format": "text"
+          },
+          "rating": {
+            "label": "Rating",
+            "format": "number"
+          },
+          "reviewCount": {
+            "label": "Reviews",
+            "format": "number"
+          },
+          "priceLevel": {
+            "label": "Price level",
+            "format": "text"
+          },
+          "address": {
+            "label": "Address",
+            "format": "text"
+          },
+          "placeUrl": {
+            "label": "Google Maps",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "geo": {
+      "title": "Coordinates",
+      "description": "Latitude and longitude per business, for mapping or radius filtering.",
+      "transformation": {
+        "fields": [
+          "businessName",
+          "address",
+          "latitude",
+          "longitude",
+          "placeUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "businessName": {
+            "label": "Business",
+            "format": "text"
+          },
+          "address": {
+            "label": "Address",
+            "format": "text"
+          },
+          "latitude": {
+            "label": "Latitude",
+            "format": "number"
+          },
+          "longitude": {
+            "label": "Longitude",
+            "format": "number"
+          },
+          "placeUrl": {
+            "label": "Google Maps",
+            "format": "link"
+          }
+        }
+      }
+    }
+  }
+}

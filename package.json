@@ -1,0 +1,19 @@
+{
+  "name": "google-maps-businesses",
+  "version": "1.0.0",
+  "description": "Scrape Google Maps search results to extract local business data including names, addresses, phone numbers, websites, ratings, and reviews.",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node src/main.js"
+  },
+  "keywords": ["google-maps", "local-business", "lead-generation", "scraper", "business-data"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apify": "^3.6.0",
+    "crawlee": "^3.16.0",
+    "playwright": "^1.58.2"
+  }
+}

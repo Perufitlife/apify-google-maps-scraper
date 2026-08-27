@@ -1,0 +1,12 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Business leads",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Business leads",
+            "description": "One row per Google Maps business: name, address, phone, website and any emails found on the site.",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

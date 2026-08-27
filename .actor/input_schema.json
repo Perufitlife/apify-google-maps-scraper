@@ -1,0 +1,57 @@
+{
+    "title": "Google Maps Business Scraper Input",
+    "description": "Configure search queries to find and extract local business data from Google Maps.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "searchQueries": {
+            "title": "Search Queries",
+            "type": "array",
+            "description": "List of search queries to run on Google Maps (e.g., 'dentists in Miami', 'coffee shops near Times Square NYC').",
+            "editor": "stringList",
+            "prefill": [
+                "restaurants in San Francisco"
+            ]
+        },
+        "maxResultsPerQuery": {
+            "title": "Max results per query",
+            "type": "integer",
+            "description": "Maximum number of businesses to extract per search query. Google Maps typically shows up to 120 results per search.",
+            "prefill": 15,
+            "default": 100,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "language": {
+            "title": "Language",
+            "type": "string",
+            "description": "Language code for results (e.g., 'en', 'es', 'fr'). Leave empty for default.",
+            "editor": "textfield",
+            "default": "en"
+        },
+        "maxConcurrency": {
+            "title": "Max concurrent pages",
+            "type": "integer",
+            "description": "Number of browser pages to run in parallel. Default 1 avoids Google Maps rate-limiting and yields the highest success rate.",
+            "default": 1,
+            "minimum": 1,
+            "maximum": 10
+        },
+        "includeWebsite": {
+            "title": "Visit business websites",
+            "type": "boolean",
+            "description": "Whether to visit each business website to extract additional info (emails, social links). Slower but more data.",
+            "default": false
+        },
+        "includeDetails": {
+            "title": "Open each place page (phone, hours, website)",
+            "type": "boolean",
+            "description": "Google's results list only carries the name, category, a partial address and the rating. Phone numbers, opening hours, the review count and the business's real website exist only on each place's own page, so the scraper opens them. Turn this off for a faster, cheaper sweep when a listing-only export is enough.",
+            "default": true,
+            "editor": "checkbox"
+        }
+    },
+    "required": [
+        "searchQueries"
+    ]
+}
