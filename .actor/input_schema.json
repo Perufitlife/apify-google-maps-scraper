@@ -16,8 +16,8 @@
         "maxResultsPerQuery": {
             "title": "Max results per query",
             "type": "integer",
-            "description": "Maximum number of businesses to extract per search query. Google Maps typically shows up to 120 results per search.",
-            "prefill": 15,
+            "description": "Maximum number of businesses to extract per search query. Google Maps typically shows up to 120 results per search. With Include details on, each business adds a page visit, so expect roughly 15 seconds per business.",
+            "prefill": 5,
             "default": 100,
             "minimum": 1,
             "maximum": 500
