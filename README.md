@@ -168,7 +168,6 @@ There are no monthly fees or commitments. You only pay for the data you extract.
 - **Schedule recurring runs for market monitoring.** Business data on Google Maps does not change as frequently as product prices or reviews. Weekly or monthly runs are typically sufficient for monitoring purposes.
 
 
-
 ## FAQ
 
 ### How do I scrape business data from Google Maps?
@@ -200,12 +199,6 @@ Add this actor to an Apify **Schedule** to re-scrape your target markets daily, 
 - [Google Maps Leads with Emails](https://apify.com/renzomacar/google-maps-leads-with-emails) -- Get Google Maps businesses already enriched with email addresses in one step.
 - [Healthcare Provider Leads](https://apify.com/renzomacar/healthcare-provider-leads) -- Targeted lead lists for medical, dental, and clinic verticals.
 - [Yelp Businesses Scraper](https://apify.com/renzomacar/yelp-businesses) -- Cross-reference local businesses on Yelp for broader market coverage.
-
-## Using AI to write your outreach / posts / replies?
-
-If you use this scraped data to inform AI-generated cold emails, LinkedIn posts, Reddit replies, etc., **modern detectors are catching on**. Em-dashes, "delve", parallel bullets, and 9 other patterns get accounts flagged or callout-replied. Built [**aitells.vercel.app**](https://aitells.vercel.app) after my own reddit account got 2 "all AI generated" callouts in one day. Free detector + $19 lifetime rewriter that matches your voice.
-
-
 
 ## Related scrapers
 
