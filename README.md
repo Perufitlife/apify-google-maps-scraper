@@ -151,12 +151,7 @@ It costs roughly one extra page view per business, so a listing-only sweep is fa
 
 ## How much does it cost?
 
-This actor uses a **pay-per-result** pricing model, so you only pay for the data you actually receive:
-
-- **$0.004 per business** extracted ($4.00 per 1,000 businesses)
-- A typical run scraping 100 businesses from a single search query costs approximately **$0.40**
-- Scraping 1,000 businesses costs approximately **$4.00**
-- Scraping 10,000 businesses across multiple queries costs approximately **$40.00**
+This actor uses a **pay-per-event** pricing model, so you only pay for the data you actually receive. You are charged a small start fee per run plus a fee for each business extracted. Current rates are shown on the Pricing tab of the Actor page.
 
 There are no monthly fees or commitments. You only pay for the data you extract.
 
@@ -198,7 +193,6 @@ Add this actor to an Apify **Schedule** to re-scrape your target markets daily, 
 - [Google Maps Reviews Scraper](https://apify.com/renzomacar/google-maps-reviews) -- Pull every review and owner response for the businesses you discover.
 - [Google Maps Leads with Emails](https://apify.com/renzomacar/google-maps-leads-with-emails) -- Get Google Maps businesses already enriched with email addresses in one step.
 - [Healthcare Provider Leads](https://apify.com/renzomacar/healthcare-provider-leads) -- Targeted lead lists for medical, dental, and clinic verticals.
-- [Yelp Businesses Scraper](https://apify.com/renzomacar/yelp-businesses) -- Cross-reference local businesses on Yelp for broader market coverage.
 
 ## Related scrapers
 
